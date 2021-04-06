@@ -1,11 +1,36 @@
-
 {
-  "name": "react-native-react-native-device-close",
+  "name": "react-native-device-close",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A package that adds the ability to execute code on app exit.",
+  "homepage": "https://github.com/PhysicsAreBad/react-native-device-close",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/src/index.d.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index",
+  "files": [
+    "src",
+    "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__",
+    "android/src",
+    "android/build.gradle",
+    "android/android.aar",
+    "lib/commonjs",
+    "lib/module",
+    "lib/typescript",
+    "ios/**/*.h",
+    "ios/**/*.m",
+    "ios/**/*.mm",
+    "ios/**/*.cpp",
+    "ios/Mmkv.xcodeproj/project.pbxproj",
+    "react-native-device-close.podspec",
+    "README.md"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "bob build"
   },
   "keywords": [
     "react-native"
@@ -13,9 +38,25 @@
   "author": "",
   "license": "",
   "devDependencies": {
-    "react-native": "0.41.2"
+    "@types/react-native": "^0.64.2",
+    "react-native": "0.41.2",
+    "react-native-builder-bob": "^0.18.1",
+    "typescript": "^4.2.3"
   },
   "peerDependencies": {
     "react-native": "^0.41.2"
-  }
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ]
 }

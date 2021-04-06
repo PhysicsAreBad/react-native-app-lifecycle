@@ -1,11 +1,12 @@
-//@ts-ignore
-const g = global as any;
+import { NativeModules } from 'react-native';
 
-const DeviceClose = {
+const module = NativeModules.ReactNativeDeviceClose;
+
+export const DeviceClose = {
     /**
-     * 
+     * Add a callback to be executed when the application 
      */
-    onClose: g.onClose as (callback: () => void) => void,
+    onClose: module.onClose as (callback: () => void) => void,
 
 }
 

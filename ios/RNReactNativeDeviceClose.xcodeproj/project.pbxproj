@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* RNReactNativeDeviceClose.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNReactNativeDeviceClose.m */; };
-		FB3D4BC32619617600AC5524 /* DestroyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D4BC22619617600AC5524 /* DestroyService.swift */; };
-		FB3D4BC72619620600AC5524 /* DestroyService.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D4BC62619620600AC5524 /* DestroyService.m */; };
 		FB3D4BEF2619636100AC5524 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D4BD72619633400AC5524 /* libReact.a */; };
 /* End PBXBuildFile section */
 
@@ -88,9 +86,6 @@
 		134814201AA4EA6300B7C361 /* libRNReactNativeDeviceClose.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNReactNativeDeviceClose.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNReactNativeDeviceClose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNReactNativeDeviceClose.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNReactNativeDeviceClose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNReactNativeDeviceClose.m; sourceTree = "<group>"; };
-		FB3D4BC22619617600AC5524 /* DestroyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestroyService.swift; sourceTree = "<group>"; };
-		FB3D4BC5261961C100AC5524 /* RNReactNativeDeviceClose-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNReactNativeDeviceClose-Bridging-Header.h"; sourceTree = "<group>"; };
-		FB3D4BC62619620600AC5524 /* DestroyService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DestroyService.m; sourceTree = "<group>"; };
 		FB3D4BCB2619633300AC5524 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,9 +112,6 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				FB3D4BC62619620600AC5524 /* DestroyService.m */,
-				FB3D4BC5261961C100AC5524 /* RNReactNativeDeviceClose-Bridging-Header.h */,
-				FB3D4BC22619617600AC5524 /* DestroyService.swift */,
 				B3E7B5881CC2AC0600A0062D /* RNReactNativeDeviceClose.h */,
 				B3E7B5891CC2AC0600A0062D /* RNReactNativeDeviceClose.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
@@ -273,8 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB3D4BC32619617600AC5524 /* DestroyService.swift in Sources */,
-				FB3D4BC72619620600AC5524 /* DestroyService.m in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* RNReactNativeDeviceClose.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
