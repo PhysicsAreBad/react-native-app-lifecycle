@@ -27,7 +27,7 @@ public class RNReactNativeDeviceCloseModule extends ReactContextBaseJavaModule {
 
   @Override
   public String getName() {
-    return "RNReactNativeDeviceClose";
+    return "ReactNativeDeviceClose";
   }
 
   @ReactMethod

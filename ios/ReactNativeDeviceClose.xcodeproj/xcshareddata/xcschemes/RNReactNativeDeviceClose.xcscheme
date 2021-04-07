@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1200"
+   LastUpgradeVersion = "1240"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "NO"
@@ -30,8 +30,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "58B511DA1A9E6C8500147676"
                BuildableName = "libRNReactNativeDeviceClose.a"
-               BlueprintName = "RNReactNativeDeviceClose"
-               ReferencedContainer = "container:RNReactNativeDeviceClose.xcodeproj">
+               BlueprintName = "ReactNativeDeviceClose"
+               ReferencedContainer = "container:ReactNativeDeviceClose.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -66,8 +66,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "58B511DA1A9E6C8500147676"
             BuildableName = "libRNReactNativeDeviceClose.a"
-            BlueprintName = "RNReactNativeDeviceClose"
-            ReferencedContainer = "container:RNReactNativeDeviceClose.xcodeproj">
+            BlueprintName = "ReactNativeDeviceClose"
+            ReferencedContainer = "container:ReactNativeDeviceClose.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -1,7 +1,7 @@
 {
   "name": "react-native-device-close",
   "version": "1.0.0",
-  "description": "A package that adds the ability to execute code on app exit.",
+  "description": "A package that adds the ability to execute code on app exit in React Native.",
   "homepage": "https://github.com/PhysicsAreBad/react-native-device-close",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
@@ -35,8 +35,8 @@
   "keywords": [
     "react-native"
   ],
-  "author": "",
-  "license": "",
+  "author": "PhysicsAreBad",
+  "license": "MIT",
   "devDependencies": {
     "@types/react-native": "^0.64.2",
     "react-native": "0.41.2",

@@ -14,7 +14,7 @@ public class DestroyService extends Service {
 
     @Override
     public void onTaskRemoved(Intent rootIntent) {
-        for (Callback callback : RNReactNativeDeviceCloseModule.closeCallbacks) {
+        for (Callback callback : ReactNativeDeviceCloseModule.closeCallbacks) {
             callback.invoke();
         }
     }

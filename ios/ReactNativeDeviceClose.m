@@ -1,18 +1,16 @@
-#import "RNReactNativeDeviceClose.h"
+#import "ReactNativeDeviceClose.h"
 
 #import <NotificationCenter/NotificationCenter.h>
 
-static NSMutableArray *arr;
-
-@implementation RNReactNativeDeviceClose
+@implementation ReactNativeDeviceClose
 
 - (instancetype)init
 {
     self = [super init];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillTerminate) name:UIApplicationWillTerminateNotification object:nil];
+    callbackArray = [NSMutableArray new];
     
-    arr = NSMutableArray.alloc;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillTerminate) name:UIApplicationWillTerminateNotification object:nil];
     
     return self;
 }
@@ -25,14 +23,15 @@ static NSMutableArray *arr;
 
 -(void)appWillTerminate
 {
-    for(RCTResponseSenderBlock callback in arr) {
+    
+    for(RCTResponseSenderBlock callback in callbackArray) {
         callback(@[]);
     }
 }
 
 -(void)onClose: (RCTResponseSenderBlock) block
 {
-    [arr addObject:(block)];
+    [callbackArray addObject:(block)];
 }
 
 RCT_EXPORT_MODULE(ReactNativeDeviceClose)
