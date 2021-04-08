@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "58B511DA1A9E6C8500147676"
-               BuildableName = "libRNReactNativeDeviceClose.a"
+               BuildableName = "libReactNativeDeviceClose.a"
                BlueprintName = "ReactNativeDeviceClose"
                ReferencedContainer = "container:ReactNativeDeviceClose.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "58B511DA1A9E6C8500147676"
-            BuildableName = "libRNReactNativeDeviceClose.a"
+            BuildableName = "libReactNativeDeviceClose.a"
             BlueprintName = "ReactNativeDeviceClose"
             ReferencedContainer = "container:ReactNativeDeviceClose.xcodeproj">
          </BuildableReference>

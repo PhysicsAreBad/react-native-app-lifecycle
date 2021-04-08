@@ -20,6 +20,10 @@
     return dispatch_get_main_queue();
 }
 
++ (BOOL)requiresMainQueueSetup
+{
+  return NO;
+}
 
 -(void)appWillTerminate
 {
