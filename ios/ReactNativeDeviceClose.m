@@ -2,6 +2,8 @@
 
 #import <NotificationCenter/NotificationCenter.h>
 
+#import <React/RCTLog.h>
+
 @implementation ReactNativeDeviceClose
 
 - (instancetype)init
@@ -10,7 +12,7 @@
     
     callbackArray = [NSMutableArray new];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillTerminate) name:UIApplicationWillTerminateNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillTerminate) name:UIApplicationWillResignActiveNotification object:nil];
     
     return self;
 }
@@ -22,23 +24,23 @@
 
 + (BOOL)requiresMainQueueSetup
 {
-  return NO;
+  return YES;
 }
 
--(void)appWillTerminate
+- (void)appWillTerminate
 {
-    
     for(RCTResponseSenderBlock callback in callbackArray) {
         callback(@[]);
     }
+    
+    [callbackArray removeAllObjects];
 }
 
--(void)onClose: (RCTResponseSenderBlock) block
+RCT_EXPORT_METHOD(onClose: (RCTResponseSenderBlock) callback)
 {
-    [callbackArray addObject:(block)];
+    [callbackArray addObject:(callback)];
 }
 
-RCT_EXPORT_MODULE(ReactNativeDeviceClose)
+RCT_EXPORT_MODULE()
 
 @end
-  

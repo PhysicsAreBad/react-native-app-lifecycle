@@ -11,18 +11,15 @@ import com.facebook.react.bridge.Callback;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RNReactNativeDeviceCloseModule extends ReactContextBaseJavaModule {
-
-  private final ReactApplicationContext reactContext;
+public class ReactNativeDeviceCloseModule extends ReactContextBaseJavaModule {
 
   protected static final List<Callback> closeCallbacks = new ArrayList<>();
 
-  public RNReactNativeDeviceCloseModule(ReactApplicationContext reactContext) {
+  public ReactNativeDeviceCloseModule(ReactApplicationContext reactContext) {
     super(reactContext);
-    this.reactContext = reactContext;
 
-    Intent intent = new Intent(reactContext.getApplicationContext(), DestroyService.class);
-    reactContext.getApplicationContext().startService(intent);
+    Intent emptyActivityIntent = new Intent(reactContext.getApplicationContext(), EmptyActivity.class);
+    reactContext.getApplicationContext().startActivity(emptyActivityIntent);
   }
 
   @Override
@@ -34,4 +31,5 @@ public class RNReactNativeDeviceCloseModule extends ReactContextBaseJavaModule {
   public void onClose(Callback callback) {
     closeCallbacks.add(callback);
   }
+
 }

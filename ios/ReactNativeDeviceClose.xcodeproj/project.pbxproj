@@ -386,7 +386,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ReactNativeDeviceClose;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "RNReactNativeDeviceClose-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeDeviceClose-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -407,7 +407,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ReactNativeDeviceClose;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "RNReactNativeDeviceClose-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeDeviceClose-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
